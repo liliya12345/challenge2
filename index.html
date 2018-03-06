@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115168522-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115168522-1');
+</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<div class="row">
+    <div class="col-12">
+    <form>
+    <label>Date</label>
+    <select id="day">
+    </select>
+
+    <label>Month</label>
+    <select id="month" onchange="myFunction()">
+    </select>
+
+    <label>Year</label>
+    <select id="year">
+    </select>
+
+    <button onclick="count_age()">Try it!</button>
+    </form>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
